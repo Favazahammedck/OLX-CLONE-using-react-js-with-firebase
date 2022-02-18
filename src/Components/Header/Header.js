@@ -14,6 +14,8 @@ function Header() {
   const {firebase} = useContext(FirebaseContext)
   const history = useHistory()
   const {user} = useContext (AuthContext)
+
+
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
@@ -37,7 +39,13 @@ function Header() {
           </div>
         </div>
         <div className="language">
-          <span> ENGLISH </span>
+
+<select name="cars" id="cars">
+  <option value="volvo">ENGLISH</option>
+  <option value="saab">HINDI</option>
+  <option value="mercedes">TAMIL</option>
+  <option value="audi">MALAYALAM</option>
+</select>
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
